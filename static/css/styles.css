@@ -76,3 +76,9 @@ button:focus {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
+
+.contents {
+    max-width: 550px;
+    direction: rtl;
+    margin: 0 auto;
+}
