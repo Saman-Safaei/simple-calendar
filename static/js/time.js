@@ -11,7 +11,7 @@ const sMonth = shamsiDate[1];
 const sYear = shamsiDate[0];
 
 
-const calendar = document.getElementById("calendar");
+const currentDateTextElement = document.getElementById("current-date-text");
 const monthContainers = document.getElementsByClassName("month");
 
 const dayNames = {
@@ -40,6 +40,7 @@ function generateDays(from, to, containerIndex) {
 
         if (containerIndex + 1 === sMonth && j + 1 === sDay) {
             day.classList.add("active");
+            currentDateTextElement.innerHTML = `تاریخ امروز <strong>${sYear}/${sMonth}/${sDay}</strong> هجری شمسی مصادف با <strong>${cYear}/${cMonth}/${cDay}</strong> میلادی است`
         }
         if (containerIndex + 1 === sMonth) {
             monthContainers[containerIndex].classList.add("active");
