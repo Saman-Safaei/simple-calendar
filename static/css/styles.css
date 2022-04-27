@@ -121,3 +121,7 @@ button:focus {
     bottom: 1rem;
     box-shadow: var(--shadow-color) 0 0 8px 1px;
 }
+
+#current-date-text {
+    line-height: 1.2rem;
+}
