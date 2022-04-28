@@ -91,6 +91,7 @@ button:focus {
     border-radius: 0.5rem;
     box-shadow: var(--shadow-color) 0 0 8px 1px;
     border: solid 2px lightgray;
+    transition: color 100ms linear, background-color 200ms linear;
 }
 
 .day.active {
